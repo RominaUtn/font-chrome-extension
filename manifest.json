@@ -1,0 +1,25 @@
+  {
+    "manifest_version": 3,
+    "name": "Font Select",
+    "version": "1.0.0",
+    "description": "Una extensión para modificar la fuente de tu navegador",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "declarativeContent",
+      "fontSettings"
+    ],
+    "host_permissions": [
+      "*://*/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
